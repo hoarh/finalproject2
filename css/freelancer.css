@@ -42,6 +42,11 @@ h6 {
     
 }
 
+.item h3 {
+    font-family: Indie Flower;
+    color: black;
+}
+
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
