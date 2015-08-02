@@ -22,7 +22,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: ##6699FF;
 }
 
 h1,
@@ -31,9 +31,15 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*text-transform: uppercase;*/
+    font-family: Merriweather;
     font-weight: 700;
+}
+
+.bcISaidSo {
+    font-family: Lobster Two;
+    color: #6699FF;
+    
 }
 
 hr.star-light,
@@ -81,8 +87,8 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    color: #fff;
-    background: #18bc9c;
+    color: #FFA07A;
+    background-color: #DCDCDC;
 }
 
 header .container {
@@ -97,8 +103,8 @@ header img {
 
 header .intro-text .name {
     display: block;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*text-transform: uppercase;*/
+    font-family: Merriweather;
     font-size: 2em;
     font-weight: 700;
 }
@@ -148,10 +154,18 @@ header .intro-text .skills {
 }
 
 .navbar {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*text-transform: uppercase;*/
+    font-family: Merriweather;
+    font-weight: 700;
+    background-color: #6699FF;
+}
+
+.navbar-brand {
+    /*text-transform: uppercase;*/
+    font-family: Lobster Two;
     font-weight: 700;
 }
+
 
 .navbar a:focus {
     outline: 0;
@@ -190,7 +204,7 @@ section.success a:focus,
 section.success a:active,
 section.success a.active {
     outline: 0;
-    color: #2c3e50;
+    color: #6699FF;
 }
 
 @media(max-width:767px) {
