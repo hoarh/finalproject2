@@ -25,6 +25,10 @@ a.active {
     color: #18bc9c;
 }
 
+a.mooc {
+    color: white;
+}
+
 h1,
 h2,
 h3,
@@ -36,9 +40,9 @@ h6 {
     font-weight: 700;
 }
 
-.bcISaidSo {
-    font-family: Lobster Two;
-    color: #6699FF;
+h4 {
+    color: white;
+}
     
 }
 
@@ -121,6 +125,22 @@ header .intro-text .name {
 header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
+}
+
+.blue {
+    color:#6699FF;
+}
+
+.orange {
+    color: #FFA07A;
+}
+
+.goodToKnow {
+    border: 3px dashed #FFA07A;
+}
+
+.goodToKnow p {
+    text-align: left;
 }
 
 @media(min-width:768px) {
