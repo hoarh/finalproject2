@@ -43,7 +43,51 @@ var container = $('.mygrid').isotope({
     layoutMode: 'fitRows'
 });
 
+// $("#paid").click(function(e){
+//     e.preventDefault();
+//     container.isotope({ filter: '.paid' });
+// })
+
+$("#portfolio-item").click(function(e){
+    e.preventDefault();
+    container.isotope({ filter: '.portfolio-item' });
+})
+
+$("#genEd").click(function(e){
+    e.preventDefault();
+    container.isotope({ filter: '.genEd' });
+})
+
+$("#business").click(function(e){
+    e.preventDefault();
+    container.isotope({ filter: '.business' });
+})
+
+$("#tech").click(function(e){
+    e.preventDefault();
+    container.isotope({ filter: '.tech' });
+})
+
+$("#language").click(function(e){
+    e.preventDefault();
+    container.isotope({ filter: '.language' });
+}) 
+
+$("#free").click(function(e){
+    e.preventDefault();
+    container.isotope({ filter: '.free' });
+})
+
 $("#paid").click(function(e){
     e.preventDefault();
     container.isotope({ filter: '.paid' });
 })
+
+  // change is-checked class on buttons
+$('.button-group').each( function( i, buttonGroup ) {
+    var $buttonGroup = $( buttonGroup );
+    $buttonGroup.on( 'click', 'button', function() {
+      $buttonGroup.find('.is-checked').removeClass('is-checked');
+      $( this ).addClass('is-checked');
+    });
+  });
