@@ -37,8 +37,13 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-$('.row').isotope({
+var container = $('.mygrid').isotope({
   // options
-  itemSelector: '.portfolio-item',
-  layoutMode: 'fitRows'
+    itemSelector: '.portfolio-item',
+    layoutMode: 'fitRows'
 });
+
+$("#paid").click(function(e){
+    e.preventDefault();
+    container.isotope({ filter: '.paid' });
+})
