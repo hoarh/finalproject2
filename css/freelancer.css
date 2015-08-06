@@ -36,6 +36,11 @@ h6 {
     font-weight: 700;
 }
 
+.navbar-header p {
+    display: inline;
+    font-size: 1em;
+}
+
 .bcISaidSo {
     font-family: Lobster Two;
     color: #6699FF;
@@ -101,8 +106,13 @@ header {
 }
 
 header .container {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
+}
+
+header .newContainer {
+    padding-top: 100px;
+    padding-bottom: 10px;
 }
 
 header img {
@@ -125,8 +135,13 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 100px;
+        padding-top: 50px;
         padding-bottom: 100px;
+    }
+
+    header .newContainer {
+        padding-top: 100px;
+        padding-bottom: 10px;
     }
 
     header .intro-text .name {
@@ -194,7 +209,22 @@ header .intro-text .skills {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
+}
+
+section.quote {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 90px;
+    padding-right: 90px;
+    background-color: #18bc9c;
+    text-align: left;
+}
+
+p.quote {
+    color: white;
+    font-size: 2em;
+    font-family: Oswald;
 }
 
 #portfolio {
