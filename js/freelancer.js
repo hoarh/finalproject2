@@ -36,3 +36,9 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+$('.row').isotope({
+  // options
+  itemSelector: '.portfolio-item',
+  layoutMode: 'fitRows'
+});
