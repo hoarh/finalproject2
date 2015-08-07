@@ -48,46 +48,76 @@ var container = $('.mygrid').isotope({
 //     container.isotope({ filter: '.paid' });
 // })
 
+var category;
+var price;
+
 $("#portfolio-item").click(function(e){
     e.preventDefault();
     container.isotope({ filter: '.portfolio-item' });
+    category = undefined;
+    price = undefined;
+    applyFilter();
 })
 
 $("#genEd").click(function(e){
-    e.preventDefault();
-    container.isotope({ filter: '.genEd' });
+    e.preventDefault();    
+    category = 'genEd';
+    applyFilter();
 })
 
 $("#business").click(function(e){
     e.preventDefault();
-    container.isotope({ filter: '.business' });
+    category = 'business';
+     applyFilter();
 })
 
 $("#tech").click(function(e){
     e.preventDefault();
-    container.isotope({ filter: '.tech' });
+    category = 'tech';
+     applyFilter();
 })
 
 $("#language").click(function(e){
     e.preventDefault();
-    container.isotope({ filter: '.language' });
+    category = 'language';
+    applyFilter();
 }) 
 
 $("#free").click(function(e){
     e.preventDefault();
-    container.isotope({ filter: '.free' });
+    price = 'free';
+    applyFilter();
 })
 
 $("#paid").click(function(e){
     e.preventDefault();
-    container.isotope({ filter: '.paid' });
+    price = 'paid';
+    applyFilter();
 })
+
+function applyFilter() {
+    if(category && price) {
+        container.isotope({ filter: '.' + category + '.' + price});
+    } else if(category) {
+        container.isotope({ filter: '.' + category});
+    } else if(price) {
+        container.isotope({ filter: '.' + price});
+    }
+}
+
 
   // change is-checked class on buttons
 $('.button-group').each( function( i, buttonGroup ) {
     var $buttonGroup = $( buttonGroup );
     $buttonGroup.on( 'click', 'button', function() {
       $buttonGroup.find('.is-checked').removeClass('is-checked');
-      $( this ).addClass('is-checked');
-    });
-  });
+      $(this).addClass('is-checked');
+});
+});
+
+// $('.portfolio-item').on( 'click', 'button', function () {
+//     var $buttonGroup = $('.button-group');
+//     $buttonGroup.removeClass('.is-checked');
+// });
+// });
+
