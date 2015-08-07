@@ -1,0 +1,17 @@
+
+h4 {
+    color: white;
+}
+
+header {
+    color: #9966CC;
+}
+
+header .container {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+#portfolio {
+	background-color: #9966CC;
+}
