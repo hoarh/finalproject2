@@ -1,0 +1,13 @@
+h4 {
+    color: white;
+}
+
+header {
+    color: #FFA07A;
+}
+
+header .container {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+

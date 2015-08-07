@@ -6,8 +6,8 @@ header {
     color: #18bc9c;
 }
 
-header .container {
-    padding-top: 100px;
+h1 {
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
