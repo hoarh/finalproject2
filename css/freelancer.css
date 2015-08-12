@@ -49,12 +49,12 @@ h6 {
 
 .item h3 {
     font-family: Indie Flower;
-    color: #18bc9c;
-    font-size: 3em;
+    color: #33CC66;
+    font-size: 4em;
 }
 
 .item img {
-    opacity: 0.4;
+    opacity: 0.3;
 }
 hr.star-light,
 hr.star-primary {
@@ -452,7 +452,7 @@ footer .footer-below {
     outline: 0;
 }
 
-.portfolio-modal .modal-content {
+/*.portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
     border: 0;
@@ -514,4 +514,4 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
-}
+}*/
