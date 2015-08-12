@@ -115,9 +115,8 @@ $('.button-group').each( function( i, buttonGroup ) {
 });
 });
 
-// $('.portfolio-item').on( 'click', 'button', function () {
-//     var $buttonGroup = $('.button-group');
-//     $buttonGroup.removeClass('.is-checked');
-// });
-// });
+$('#portfolio-item').on( 'click', function () {
+      var $buttonGroup = $('.button-group');
+      $buttonGroup.find('.is-checked').removeClass('is-checked');
+});
 
